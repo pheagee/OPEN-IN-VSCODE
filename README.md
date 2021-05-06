@@ -1,2 +1,2 @@
 # Autoswitcher for GPU mining scripts 
-[![Build Status](https://
+[![Build Status](https://travis-c
