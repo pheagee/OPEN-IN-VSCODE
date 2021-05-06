@@ -1,1 +1,2 @@
-# Autoswitcher for GPU mining scr
+# Autoswitcher for GPU mining scripts 
+[![
