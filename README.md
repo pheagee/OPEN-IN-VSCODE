@@ -3,4 +3,4 @@
 [![Coverage Status](https://coveralls.io/repos/github/chibby0ne/read_wtm/badge.svg?branch=master)](https://coveralls.io/github/chibby0ne/read_wtm?branch=master)
 
 Let's say you have a GPU mining rig and you want to mine the most profitable
-c
+coin.
