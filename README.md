@@ -4,4 +4,4 @@
 
 Let's say you have a GPU mining rig and you want to mine the most profitable
 coin.
-Since this migh
+Since this might chang
