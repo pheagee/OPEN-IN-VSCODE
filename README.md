@@ -4,4 +4,4 @@
 
 Let's say you have a GPU mining rig and you want to mine the most profitable
 coin.
-Since this might change day to day (or even hour to h
+Since this might change day to day (or even hour to hour),
