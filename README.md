@@ -7,4 +7,4 @@ coin.
 Since this might change day to day (or even hour to hour), this implies you
 would have to constantly check for the most profitable one, remote access your
 miner, close the current running mining program, and open the other more
-prof
+profitable 
