@@ -9,4 +9,4 @@ would have to constantly check for the most profitable one, remote access your
 miner, close the current running mining program, and open the other more
 profitable coin.
 
-This program automates just that p
+This program automates just that process
