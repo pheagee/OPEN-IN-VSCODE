@@ -12,4 +12,4 @@ profitable coin.
 This program automates just that process, gathering using the wonderful
 [whattomine](https://whattomine.com) page.
 
-You c
+You can customize
