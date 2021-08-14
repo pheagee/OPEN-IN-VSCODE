@@ -10,4 +10,5 @@ miner, close the current running mining program, and open the other more
 profitable coin.
 
 This program automates just that process, gathering using the wonderful
-[whattomine](https://whattomine.com) pa
+[whattomine](https://whattomine.com) page.
+
