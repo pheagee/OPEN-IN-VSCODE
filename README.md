@@ -12,4 +12,6 @@ profitable coin.
 This program automates just that process, gathering using the wonderful
 [whattomine](https://whattomine.com) page.
 
-You can customize your rig setup in the `conf.jso
+You can customize your rig setup in the `conf.json`.
+
+#
