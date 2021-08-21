@@ -14,4 +14,4 @@ This program automates just that process, gathering using the wonderful
 
 You can customize your rig setup in the `conf.json`.
 
-#
+## NOTE: For
