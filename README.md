@@ -16,4 +16,4 @@ You can customize your rig setup in the `conf.json`.
 
 ## NOTE: For Windows!!
 
-Each batfile s
+Each batfile should ch
