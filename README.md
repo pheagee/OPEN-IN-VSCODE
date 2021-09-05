@@ -16,4 +16,4 @@ You can customize your rig setup in the `conf.json`.
 
 ## NOTE: For Windows!!
 
-Each batfile should change the title of the command prompt with the na
+Each batfile should change the title of the command prompt with the name o
