@@ -17,4 +17,5 @@ You can customize your rig setup in the `conf.json`.
 ## NOTE: For Windows!!
 
 Each batfile should change the title of the command prompt with the name of
-the coin that it mines. Otherwise there's no easy way to find out which coin
+the coin that it mines. Otherwise there's no easy way to find out which coin a
+min
