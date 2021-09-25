@@ -18,4 +18,4 @@ You can customize your rig setup in the `conf.json`.
 
 Each batfile should change the title of the command prompt with the name of
 the coin that it mines. Otherwise there's no easy way to find out which coin a
-miner program that c
+miner program that can mine
