@@ -21,4 +21,4 @@ the coin that it mines. Otherwise there's no easy way to find out which coin a
 miner program that can mine several coin is actually mining at the moment.
 
 You need to rename (and copy if necessary) the miner executables, so that its
-name
+name con
