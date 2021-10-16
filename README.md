@@ -20,4 +20,5 @@ Each batfile should change the title of the command prompt with the name of
 the coin that it mines. Otherwise there's no easy way to find out which coin a
 miner program that can mine several coin is actually mining at the moment.
 
-You need to rename (and copy if necessary) the miner executables, so that
+You need to rename (and copy if necessary) the miner executables, so that its
+n
