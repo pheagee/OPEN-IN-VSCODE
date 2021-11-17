@@ -25,3 +25,4 @@ name contains the coin that you would like to mine in order to find it, when
 trying to start/kill the coin currently being mined.
 
 
+Example:
