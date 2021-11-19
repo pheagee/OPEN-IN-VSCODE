@@ -28,4 +28,5 @@ trying to start/kill the coin currently being mined.
 Example:
 
 ```
-@echo
+@echo off
+t
