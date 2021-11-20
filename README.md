@@ -29,4 +29,4 @@ Example:
 
 ```
 @echo off
-t
+title 
