@@ -29,4 +29,5 @@ Example:
 
 ```
 @echo off
-title goby
+title gobyte
+ccm
