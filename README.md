@@ -30,4 +30,4 @@ Example:
 ```
 @echo off
 title gobyte
-ccm
+ccminer.exe 
