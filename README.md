@@ -30,4 +30,4 @@ Example:
 ```
 @echo off
 title gobyte
-ccminer.exe -o stratum+tcp://....... -a .
+ccminer.exe -o stratum+tcp://....... -a ... -u .
