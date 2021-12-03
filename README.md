@@ -31,4 +31,4 @@ Example:
 @echo off
 title gobyte
 ccminer.exe -o stratum+tcp://....... -a ... -u ... 
-``
+```
