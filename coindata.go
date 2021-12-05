@@ -22,3 +22,5 @@ type Coin struct {
 	Block_time          float64 `json:"block_time"`
 	Block_reward        float64 `json:"block_reward"`
 	Block_reward24      float64 `json:"block_reward24"`
+	Last_block          uint64  `json:"last_block"`
+	Difficulty          float64 `json:"difficulty"`
