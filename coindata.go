@@ -36,3 +36,10 @@ type Coin struct {
 	Btc_revenue         string  `json:"btc_revenue"`
 	Btc_revenue24       string  `json:"btc_revenue24"`
 	Profitability       uint64  `json:"profitability"`
+	Profitability24     uint64  `json:"profitability24"`
+	Lagging             bool    `json:"lagging"`
+	Timestamp           uint64  `json:"timestamp"`
+}
+
+// Struct type that represents one coin from www.coinmarketcap.com/api
+type CoinMarketCapCoin struct {
