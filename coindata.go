@@ -43,3 +43,9 @@ type Coin struct {
 
 // Struct type that represents one coin from www.coinmarketcap.com/api
 type CoinMarketCapCoin struct {
+	Id                 string `json:"id"`                 // "bitcoin"
+	Name               string `json:"name"`               // "Bitcoin"
+	Symbol             string `json:"symbol"`             //: "BTC",
+	Rank               uint64 `json:"rank"`               // "1",
+	Price_USD          string `json:"price_usd"`          //: "13887.8",
+	Print_BTC          string `json:"price_btc"`          //: "1.0",
