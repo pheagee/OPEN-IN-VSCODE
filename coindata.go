@@ -64,3 +64,13 @@ type CoinMarketCapCoin struct {
 type Coins struct {
 	Coins map[string]Coin `json:"coins"`
 }
+
+// Structure that contains key and value of map
+// Used for sorting the keys inside the map according to value
+type Pair struct {
+	key   string
+	value float64
+}
+
+// Slice of Pair that implements sort.Interface to sort by value
+type PairList []Pair
