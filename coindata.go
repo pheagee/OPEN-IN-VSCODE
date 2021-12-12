@@ -55,3 +55,12 @@ type CoinMarketCapCoin struct {
 	Total_Supply       string `json:"total_supply"`       //: "16762862.0",
 	Max_Supply         string `json:"max_supply"`         //: "21000000.0",
 	Percent_Change_1h  string `json:"percent_change_1h"`  //: "-0.55",
+	Percent_Change_24h string `json:"percent_change_24h"` //: "1.9",
+	Percent_Change_7d  string `json:"percent_change_7d"`  //: "-26.6",
+	Last_Updated       string `json:"last_updated"`       //: "1514242461"
+}
+
+// Struct type that represents the top level type in www.whattomine.com, which contains the data from all coins
+type Coins struct {
+	Coins map[string]Coin `json:"coins"`
+}
