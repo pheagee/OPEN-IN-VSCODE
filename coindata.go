@@ -74,3 +74,8 @@ type Pair struct {
 
 // Slice of Pair that implements sort.Interface to sort by value
 type PairList []Pair
+
+// Method that returns the length for a PairList
+func (p PairList) Len() int {
+	return len(p)
+}
