@@ -79,3 +79,8 @@ type PairList []Pair
 func (p PairList) Len() int {
 	return len(p)
 }
+
+// Method that returns true if the ith element is < jth element in a PairList slice
+func (p PairList) Less(i, j int) bool {
+	return p[i].value < p[j].value
+}
