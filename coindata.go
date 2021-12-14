@@ -84,3 +84,11 @@ func (p PairList) Len() int {
 func (p PairList) Less(i, j int) bool {
 	return p[i].value < p[j].value
 }
+
+// Method that swaps the ith element  with the jth element in a PairList slice
+// Used for sorting
+func (p PairList) Swap(i, j int) {
+	p[i], p[j] = p[j], p[i]
+}
+
+//  Returns a PairList slice which is sorted by value
