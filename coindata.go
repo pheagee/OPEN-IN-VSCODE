@@ -92,3 +92,13 @@ func (p PairList) Swap(i, j int) {
 }
 
 //  Returns a PairList slice which is sorted by value
+func SortMapByValue(m map[string]float64) PairList {
+	// Create a PairList containing all the pairs
+	p := make(PairList, len(m))
+	i := 0
+	for k, v := range m {
+		p[i] = Pair{k, v}
+		i++
+	}
+	// Sort the PairList
+	sort.Sort(sort.Reverse(p))
