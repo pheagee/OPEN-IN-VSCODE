@@ -102,3 +102,8 @@ func SortMapByValue(m map[string]float64) PairList {
 	}
 	// Sort the PairList
 	sort.Sort(sort.Reverse(p))
+	return p
+}
+
+// Global httpClient with custom Timeout of 10 sec
+var myClient = &http.Client{Timeout: 10 * time.Second}
