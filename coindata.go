@@ -107,3 +107,9 @@ func SortMapByValue(m map[string]float64) PairList {
 
 // Global httpClient with custom Timeout of 10 sec
 var myClient = &http.Client{Timeout: 10 * time.Second}
+
+// Read a url an if successful writes returns the body of the page as a byte slice
+func readJsonFromUrl(url string, target interface{}) {
+	// Get request to the site, and defer closing body
+	response, err := myClient.Get(url)
+	checkFatalError(err)
