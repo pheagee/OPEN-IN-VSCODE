@@ -113,3 +113,7 @@ func readJsonFromUrl(url string, target interface{}) {
 	// Get request to the site, and defer closing body
 	response, err := myClient.Get(url)
 	checkFatalError(err)
+	defer response.Body.Close()
+
+	// read all body of page
+	responseData, err := ioutil.ReadAll(response.Body)
