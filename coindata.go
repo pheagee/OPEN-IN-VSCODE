@@ -117,3 +117,10 @@ func readJsonFromUrl(url string, target interface{}) {
 
 	// read all body of page
 	responseData, err := ioutil.ReadAll(response.Body)
+	checkFatalError(err)
+	json.Unmarshal(responseData, target)
+}
+
+// Converts string to float64 and returns float64. Includes error handling
+func convertToFloat64(s string) float64 {
+	f, err := strconv.ParseFloat(s, 64)
