@@ -124,3 +124,6 @@ func readJsonFromUrl(url string, target interface{}) {
 // Converts string to float64 and returns float64. Includes error handling
 func convertToFloat64(s string) float64 {
 	f, err := strconv.ParseFloat(s, 64)
+	checkFatalError(err)
+	return f
+}
