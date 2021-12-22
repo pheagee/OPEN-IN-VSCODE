@@ -16,3 +16,13 @@ var testInputOutput = []struct {
 			"Ethereum": 1000,
 		}, PairList{
 			Pair{"Bitcoin", 15000},
+			Pair{"Ethereum", 1000},
+			Pair{"Ripple", 1},
+		},
+	},
+}
+
+func testEqualityPairList(a, b PairList) bool {
+	if a == nil && b == nil {
+		return true
+	}
