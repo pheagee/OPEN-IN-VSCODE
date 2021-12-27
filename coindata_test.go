@@ -43,3 +43,9 @@ func testEqualityPairList(a, b PairList) bool {
 func TestSortMapByValue(t *testing.T) {
 	for _, value := range testInputOutput {
 		actualResult := SortMapByValue(value.input)
+		expectedResult := value.expectedOutput
+		if !testEqualityPairList(expectedResult, actualResult) {
+			t.Fatalf("Expected: %v but got %v\n", expectedResult, actualResult)
+		}
+	}
+}
