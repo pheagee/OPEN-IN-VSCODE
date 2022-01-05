@@ -3,4 +3,4 @@ package main
 import (
 	"encoding/json"
 	"flag"
-	"io/
+	"io/ioutil
