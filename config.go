@@ -6,4 +6,4 @@ import (
 	"io/ioutil"
 )
 
-// Js
+// Json repr
