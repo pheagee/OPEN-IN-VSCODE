@@ -6,4 +6,4 @@ import (
 	"io/ioutil"
 )
 
-// Json representation o
+// Json representation of config
