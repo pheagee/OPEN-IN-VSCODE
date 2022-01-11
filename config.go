@@ -7,3 +7,4 @@ import (
 )
 
 // Json representation of config file
+type Confi
