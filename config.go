@@ -7,4 +7,5 @@ import (
 )
 
 // Json representation of config file
-type ConfigFileJson struct
+type ConfigFileJson struct {
+	GPU 
