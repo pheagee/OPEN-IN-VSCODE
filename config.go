@@ -8,4 +8,4 @@ import (
 
 // Json representation of config file
 type ConfigFileJson struct {
-	GPU            GP
+	GPU            GPUConfig `
