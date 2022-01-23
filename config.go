@@ -9,4 +9,4 @@ import (
 // Json representation of config file
 type ConfigFileJson struct {
 	GPU            GPUConfig `json:"gpu"`
-	CostPerKw      float64 
+	CostPerKw      float64   `json
