@@ -10,4 +10,4 @@ import (
 type ConfigFileJson struct {
 	GPU            GPUConfig `json:"gpu"`
 	CostPerKw      float64   `json:"cost_per_kw"`
-	MinerDirectory string    `json:"miner_direct
+	MinerDirectory string    `json:"miner_director
