@@ -12,3 +12,5 @@ type ConfigFileJson struct {
 	CostPerKw      float64   `json:"cost_per_kw"`
 	MinerDirectory string    `json:"miner_directory"`
 }
+
+// 
