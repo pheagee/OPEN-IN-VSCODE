@@ -13,4 +13,4 @@ type ConfigFileJson struct {
 	MinerDirectory string    `json:"miner_directory"`
 }
 
-// 
+// Each GPU
