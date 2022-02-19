@@ -14,4 +14,4 @@ type ConfigFileJson struct {
 }
 
 // Each GPU type possible
-type GPUConfi
+type GPUConfig struct 
