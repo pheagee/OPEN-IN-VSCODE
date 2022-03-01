@@ -15,4 +15,4 @@ type ConfigFileJson struct {
 
 // Each GPU type possible
 type GPUConfig struct {
-	GPU280x   uint64 `json:"28
+	GPU280x   uint64 `json:"280x"`
