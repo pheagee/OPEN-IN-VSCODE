@@ -22,4 +22,4 @@ type GPUConfig struct {
 	GPU480    uint64 `json:"480"`
 	GPU570    uint64 `json:"570"`
 	GPU580    uint64 `json:580"`
-	GPUVega56 uint64
+	GPUVega56 uint64 `json:"V
