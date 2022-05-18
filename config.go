@@ -33,4 +33,4 @@ type GPUConfig struct {
 }
 
 /*
-Example configu
+Example configuration 
