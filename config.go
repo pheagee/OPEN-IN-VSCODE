@@ -36,3 +36,4 @@ type GPUConfig struct {
 Example configuration file:
 {
 	"gpu": {
+		"107
