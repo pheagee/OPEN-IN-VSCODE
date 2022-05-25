@@ -36,4 +36,4 @@ type GPUConfig struct {
 Example configuration file:
 {
 	"gpu": {
-		"107
+		"1070": 4,
