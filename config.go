@@ -37,3 +37,4 @@ Example configuration file:
 {
 	"gpu": {
 		"1070": 4,
+		"
