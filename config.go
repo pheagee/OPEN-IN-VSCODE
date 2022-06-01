@@ -39,4 +39,5 @@ Example configuration file:
 		"1070": 4,
 		"1080": 5
 	},
-	"cost_per_kw": 0
+	"cost_per_kw": 0.3,
+ 
