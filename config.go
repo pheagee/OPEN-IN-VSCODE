@@ -40,4 +40,4 @@ Example configuration file:
 		"1080": 5
 	},
 	"cost_per_kw": 0.3,
-    "miner_directory": "C:\User
+    "miner_directory": "C:\Users\username\mi
