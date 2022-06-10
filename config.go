@@ -41,3 +41,6 @@ Example configuration file:
 	},
 	"cost_per_kw": 0.3,
     "miner_directory": "C:\Users\username\miners"
+}
+*/
+//
