@@ -43,4 +43,4 @@ Example configuration file:
     "miner_directory": "C:\Users\username\miners"
 }
 */
-// Read config file, unmar
+// Read config file, unmarshall the 
