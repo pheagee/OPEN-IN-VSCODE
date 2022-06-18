@@ -43,4 +43,4 @@ Example configuration file:
     "miner_directory": "C:\Users\username\miners"
 }
 */
-// Read config file, unmarshall the json into a struct and return the stru
+// Read config file, unmarshall the json into a struct and return the struct
