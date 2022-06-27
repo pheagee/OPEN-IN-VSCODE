@@ -44,4 +44,4 @@ Example configuration file:
 }
 */
 // Read config file, unmarshall the json into a struct and return the struct
-func readConfig(configFile string) Config
+func readConfig(configFile string) ConfigFileJs
