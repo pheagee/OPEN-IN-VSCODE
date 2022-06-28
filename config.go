@@ -45,4 +45,4 @@ Example configuration file:
 */
 // Read config file, unmarshall the json into a struct and return the struct
 func readConfig(configFile string) ConfigFileJson {
-	var tar
+	var target Co
