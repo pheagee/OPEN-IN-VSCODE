@@ -47,4 +47,4 @@ Example configuration file:
 func readConfig(configFile string) ConfigFileJson {
 	var target ConfigFileJson
 	configFileContent, err := ioutil.ReadFile(configFile)
-	checkFa
+	checkFatalE
