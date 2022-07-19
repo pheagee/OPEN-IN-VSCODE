@@ -46,4 +46,5 @@ Example configuration file:
 // Read config file, unmarshall the json into a struct and return the struct
 func readConfig(configFile string) ConfigFileJson {
 	var target ConfigFileJson
-	configFileContent, err := ioutil.ReadFile(confi
+	configFileContent, err := ioutil.ReadFile(configFile)
+	checkFa
