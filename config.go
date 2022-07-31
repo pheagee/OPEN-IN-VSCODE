@@ -49,4 +49,5 @@ func readConfig(configFile string) ConfigFileJson {
 	configFileContent, err := ioutil.ReadFile(configFile)
 	checkFatalError(err)
 	err = json.Unmarshal(configFileContent, &target)
-	checkFata
+	checkFatalError(err)
+	
