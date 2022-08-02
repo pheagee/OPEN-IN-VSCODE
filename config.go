@@ -50,4 +50,7 @@ func readConfig(configFile string) ConfigFileJson {
 	checkFatalError(err)
 	err = json.Unmarshal(configFileContent, &target)
 	checkFatalError(err)
-	return tar
+	return target
+}
+
+/
