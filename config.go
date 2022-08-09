@@ -53,4 +53,4 @@ func readConfig(configFile string) ConfigFileJson {
 	return target
 }
 
-// Check th
+// Check the pars
