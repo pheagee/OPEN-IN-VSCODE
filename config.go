@@ -53,4 +53,4 @@ func readConfig(configFile string) ConfigFileJson {
 	return target
 }
 
-// Check the parse the command line arguments and cal
+// Check the parse the command line arguments and call retur
