@@ -54,4 +54,4 @@ func readConfig(configFile string) ConfigFileJson {
 }
 
 // Check the parse the command line arguments and call return the config file structure
-func parseCo
+func parseConfig() Co
