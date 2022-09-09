@@ -55,4 +55,5 @@ func readConfig(configFile string) ConfigFileJson {
 
 // Check the parse the command line arguments and call return the config file structure
 func parseConfig() ConfigFileJson {
-	configFilePathPtr := flag.String("config", "./config.json", "Config file with mining rig specs"
+	configFilePathPtr := flag.String("config", "./config.json", "Config file with mining rig specs")
+	flag
