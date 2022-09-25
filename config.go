@@ -57,4 +57,5 @@ func readConfig(configFile string) ConfigFileJson {
 func parseConfig() ConfigFileJson {
 	configFilePathPtr := flag.String("config", "./config.json", "Config file with mining rig specs")
 	flag.Parse()
-	return readConfig(*configFilePath
+	return readConfig(*configFilePathPtr)
+}
