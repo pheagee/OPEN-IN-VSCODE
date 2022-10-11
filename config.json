@@ -2,4 +2,5 @@
 	"gpu": {
 		"1070": 4
 	},
-	"cost_per_kw": 
+	"cost_per_kw": 0.3,
+   
