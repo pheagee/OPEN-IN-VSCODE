@@ -6,3 +6,6 @@ const numOfGPUs = 15
 
 // Map of names of GPUs to each GPU characteristic (HashRate and Power Consumption) per Hashing Algorithm
 var GPUs map[string]GPU
+
+// Any algorithm has a specific hash rate and a specific power consumption
+type Algorithm struct {
