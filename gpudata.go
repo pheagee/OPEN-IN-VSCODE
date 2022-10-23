@@ -14,3 +14,12 @@ type Algorithm struct {
 }
 
 // Each GPU is a collection of distinct algorithms characteristics
+type GPU struct {
+	Ethash      Algorithm
+	Groestl     Algorithm
+	X11Gost     Algorithm
+	CryptoNight Algorithm
+	Equihash    Algorithm
+	Lyra2REv2   Algorithm
+	NeoScrypt   Algorithm
+	LBRY        Algorithm
