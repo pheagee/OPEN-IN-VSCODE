@@ -23,3 +23,10 @@ type GPU struct {
 	Lyra2REv2   Algorithm
 	NeoScrypt   Algorithm
 	LBRY        Algorithm
+	Blake2b     Algorithm
+	Blake14r    Algorithm
+	Pascal      Algorithm
+	Skunkhash   Algorithm
+}
+
+// Data scraped from www.whattomine.com  01.01.2018
