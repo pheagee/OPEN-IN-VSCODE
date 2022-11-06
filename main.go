@@ -19,3 +19,8 @@ const (
 
 func init() {
 	// array that contains names of gpus
+	var GPU_Names [numOfGPUs]string
+	// initialize array that contains names of gpus
+	GPU_Names[0] = "GPU280x"
+	GPU_Names[1] = "GPU380"
+	GPU_Names[2] = "GPUFury"
