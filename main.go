@@ -30,3 +30,7 @@ func init() {
 	GPU_Names[6] = "GPU580"
 	GPU_Names[7] = "GPUVega56"
 	GPU_Names[8] = "GPUVega64"
+	GPU_Names[9] = "GPU750Ti"
+	GPU_Names[10] = "GPU1050Ti"
+	GPU_Names[11] = "GPU1060"
+	GPU_Names[12] = "GPU1070"
