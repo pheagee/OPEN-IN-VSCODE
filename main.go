@@ -36,3 +36,11 @@ func init() {
 	GPU_Names[12] = "GPU1070"
 	GPU_Names[13] = "GPU1080"
 	GPU_Names[14] = "GPU1080Ti"
+
+	// initilize array that contains GPU characteristics in an order corresponding the name written in the GPU_Names array
+	var GPU_HashRates [numOfGPUs]GPU
+	GPU_HashRates[0] = GPU280x
+	GPU_HashRates[1] = GPU380
+	GPU_HashRates[2] = GPUFury
+	GPU_HashRates[3] = GPU470
+	GPU_HashRates[4] = GPU480
