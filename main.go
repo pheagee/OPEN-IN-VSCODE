@@ -44,3 +44,10 @@ func init() {
 	GPU_HashRates[2] = GPUFury
 	GPU_HashRates[3] = GPU470
 	GPU_HashRates[4] = GPU480
+	GPU_HashRates[5] = GPU570
+	GPU_HashRates[6] = GPU580
+	GPU_HashRates[7] = GPUVega56
+	GPU_HashRates[8] = GPUVega64
+	GPU_HashRates[9] = GPU750Ti
+	GPU_HashRates[10] = GPU1050Ti
+	GPU_HashRates[11] = GPU1060
