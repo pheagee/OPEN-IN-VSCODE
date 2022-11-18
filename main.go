@@ -51,3 +51,8 @@ func init() {
 	GPU_HashRates[9] = GPU750Ti
 	GPU_HashRates[10] = GPU1050Ti
 	GPU_HashRates[11] = GPU1060
+	GPU_HashRates[12] = GPU1070
+	GPU_HashRates[13] = GPU1080
+	GPU_HashRates[14] = GPU1080Ti
+
+	// initialize map that contains GPUs characteristics scraped from whattomine
