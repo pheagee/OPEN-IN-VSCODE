@@ -56,3 +56,9 @@ func init() {
 	GPU_HashRates[14] = GPU1080Ti
 
 	// initialize map that contains GPUs characteristics scraped from whattomine
+	GPUs = make(map[string]GPU)
+	for i := range GPU_Names {
+		GPUs[GPU_Names[i]] = GPU_HashRates[i]
+	}
+
+}
