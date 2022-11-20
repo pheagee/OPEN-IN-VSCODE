@@ -79,3 +79,15 @@ func calculateHashRateAndPowerForRig(totalGPUsDevices map[string]uint64) GPU {
 			checkFatalTypeAssertion(ok)
 			castedAlgo.HashRate *= float64(totalGPUsDevices[k])
 			castedAlgo.Power *= float64(totalGPUsDevices[k])
+			castedAlgoAsValue := reflect.ValueOf(castedAlgo)
+			e.Field(i).Set(castedAlgoAsValue)
+		}
+
+		// store back the total GPU Characteristics
+		partialGPUsCharacteristics[k] = gpu
+	}
+
+	// instance GPU that contains the total hashing rate and power for all the GPUS listed in conf.json
+	var totalGPUsCharacteristics GPU
+	totalReflect := reflect.ValueOf(&totalGPUsCharacteristics)
+	totalReflectElem := totalReflect.Elem()
