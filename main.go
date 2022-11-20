@@ -64,3 +64,8 @@ func init() {
 }
 
 func calculateHashRateAndPowerForRig(totalGPUsDevices map[string]uint64) GPU {
+
+	// total GPU characteristics
+	partialGPUsCharacteristics := make(map[string]GPU)
+	for k, _ := range totalGPUsDevices {
+		gpu := GPUs[k]
