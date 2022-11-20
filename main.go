@@ -62,3 +62,5 @@ func init() {
 	}
 
 }
+
+func calculateHashRateAndPowerForRig(totalGPUsDevices map[string]uint64) GPU {
