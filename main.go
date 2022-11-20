@@ -69,3 +69,13 @@ func calculateHashRateAndPowerForRig(totalGPUsDevices map[string]uint64) GPU {
 	partialGPUsCharacteristics := make(map[string]GPU)
 	for k, _ := range totalGPUsDevices {
 		gpu := GPUs[k]
+
+		// Multiply each algorithm explicilty per the number of GPUs
+		// Another way of doing it is using reflection to iterate over the fields of the structure
+		r := reflect.ValueOf(&gpu)
+		e := r.Elem()
+		for i := 0; i < e.NumField(); i++ {
+			castedAlgo, ok := e.Field(i).Interface().(Algorithm)
+			checkFatalTypeAssertion(ok)
+			castedAlgo.HashRate *= float64(totalGPUsDevices[k])
+			castedAlgo.Power *= float64(totalGPUsDevices[k])
