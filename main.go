@@ -91,3 +91,10 @@ func calculateHashRateAndPowerForRig(totalGPUsDevices map[string]uint64) GPU {
 	var totalGPUsCharacteristics GPU
 	totalReflect := reflect.ValueOf(&totalGPUsCharacteristics)
 	totalReflectElem := totalReflect.Elem()
+	for _, v := range partialGPUsCharacteristics {
+		partialReflect := reflect.ValueOf(v)
+
+		for i := 0; i < totalReflectElem.NumField(); i++ {
+			castedPartialAlgo, ok := partialReflect.Field(i).Interface().(Algorithm)
+			checkFatalTypeAssertion(ok)
+			castedTotalAlgo, ok := totalReflectElem.Field(i).Interface().(Algorithm)
