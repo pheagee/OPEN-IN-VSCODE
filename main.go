@@ -113,3 +113,11 @@ func getNumberOfGPUs(config ConfigFileJson) map[string]uint64 {
 	// store the gpus and quantities used (taken from conf.json)
 	r := reflect.ValueOf(config.GPU)
 	// map of type  [ GPU_Name ]  -> Number of  gpus
+	totalGPUsDevices := make(map[string]uint64)
+	for k, _ := range GPUs {
+		numOfGPUs := r.FieldByName(k).Uint()
+		if numOfGPUs != 0 {
+			totalGPUsDevices[k] = numOfGPUs
+		}
+	}
+	return totalGPUsDevices
