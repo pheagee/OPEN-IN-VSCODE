@@ -103,3 +103,13 @@ func calculateHashRateAndPowerForRig(totalGPUsDevices map[string]uint64) GPU {
 			castedTotalAlgo.HashRate += castedPartialAlgo.HashRate
 			castedTotalAlgo.Power += castedPartialAlgo.Power
 			castedTotalAlgoAsValue := reflect.ValueOf(castedTotalAlgo)
+			totalReflectElem.Field(i).Set(castedTotalAlgoAsValue)
+		}
+	}
+	return totalGPUsCharacteristics
+}
+
+func getNumberOfGPUs(config ConfigFileJson) map[string]uint64 {
+	// store the gpus and quantities used (taken from conf.json)
+	r := reflect.ValueOf(config.GPU)
+	// map of type  [ GPU_Name ]  -> Number of  gpus
