@@ -121,3 +121,9 @@ func getNumberOfGPUs(config ConfigFileJson) map[string]uint64 {
 		}
 	}
 	return totalGPUsDevices
+}
+
+func main() {
+
+	// Parse command
+	config := parseConfig()
