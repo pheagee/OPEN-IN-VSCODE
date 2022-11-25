@@ -127,3 +127,6 @@ func main() {
 
 	// Parse command
 	config := parseConfig()
+
+	// get number of GPUs
+	numOfGPUs := getNumberOfGPUs(config)
