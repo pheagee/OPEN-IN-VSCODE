@@ -130,3 +130,11 @@ func main() {
 
 	// get number of GPUs
 	numOfGPUs := getNumberOfGPUs(config)
+
+	// Calculate final hashrate and power
+	totalGPUsCharacteristics := calculateHashRateAndPowerForRig(numOfGPUs)
+
+	// read current values from www.whattomine.com
+	url := constructUrlQuery(config, totalGPUsCharacteristics)
+
+	regexp := compileRegex()
