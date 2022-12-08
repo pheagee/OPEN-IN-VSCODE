@@ -138,3 +138,14 @@ func main() {
 	url := constructUrlQuery(config, totalGPUsCharacteristics)
 
 	regexp := compileRegex()
+
+	log.Println("Checking for new best coin")
+
+	var bestCoin string
+	bestCoin = getMostProfitableCoin(url, regexp, config)
+
+	log.Println("Starting to mine: " + bestCoin)
+	cmd := exec.Command(bestCoin)
+	checkFatalError(cmd.Start())
+
+	// now we need to start that script if it is not started
