@@ -156,3 +156,8 @@ func main() {
 		log.Println("Checking for new best coin")
 		// checked new bestCoin
 		newBestCoin := getMostProfitableCoin(url, regexp, config)
+		if bestCoin != newBestCoin {
+			// start new bestCoin
+			log.Println("Starting to mine: " + newBestCoin)
+			cmd := exec.Command(newBestCoin)
+			checkFatalError(cmd.Start())
