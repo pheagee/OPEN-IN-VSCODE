@@ -149,3 +149,10 @@ func main() {
 	checkFatalError(cmd.Start())
 
 	// now we need to start that script if it is not started
+	// and loop forever
+	ticker := time.NewTicker(time.Minute * 5)
+	// go checkAndRun(ticker, url, bestCoin)
+	for _ = range ticker.C {
+		log.Println("Checking for new best coin")
+		// checked new bestCoin
+		newBestCoin := getMostProfitableCoin(url, regexp, config)
