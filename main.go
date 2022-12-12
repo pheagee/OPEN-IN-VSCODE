@@ -161,3 +161,9 @@ func main() {
 			log.Println("Starting to mine: " + newBestCoin)
 			cmd := exec.Command(newBestCoin)
 			checkFatalError(cmd.Start())
+			bestCoin = newBestCoin
+		} else {
+			log.Println("Still mining " + bestCoin)
+		}
+	}
+}
