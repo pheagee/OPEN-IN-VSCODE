@@ -167,3 +167,10 @@ func main() {
 		}
 	}
 }
+
+// Returns the compiled regexp
+func compileRegex() *regexp.Regexp {
+	re, err := regexp.Compile(coinsRegexp)
+	checkFatalError(err)
+	return re
+}
