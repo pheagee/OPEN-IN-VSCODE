@@ -174,3 +174,8 @@ func compileRegex() *regexp.Regexp {
 	checkFatalError(err)
 	return re
 }
+
+// checks for err and return log fatal if any error
+func checkFatalError(err error) {
+	if err != nil {
+		log.Fatal(err)
