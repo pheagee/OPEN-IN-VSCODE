@@ -191,3 +191,8 @@ func checkFatalTypeAssertion(ok bool) {
 
 // Returns the most profitable script filename
 func getMostProfitableCoin(url string, regexp *regexp.Regexp, config ConfigFileJson) string {
+	// read json from url
+	var coins Coins
+	readJsonFromUrl(url, &coins)
+
+	// read current value of bitcoin
