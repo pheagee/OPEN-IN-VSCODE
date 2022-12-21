@@ -183,3 +183,11 @@ func checkFatalError(err error) {
 }
 
 // checks for err and return log fatal if any error
+func checkFatalTypeAssertion(ok bool) {
+	if !ok {
+		log.Fatal("Type assertion failed")
+	}
+}
+
+// Returns the most profitable script filename
+func getMostProfitableCoin(url string, regexp *regexp.Regexp, config ConfigFileJson) string {
