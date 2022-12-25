@@ -196,3 +196,7 @@ func getMostProfitableCoin(url string, regexp *regexp.Regexp, config ConfigFileJ
 	readJsonFromUrl(url, &coins)
 
 	// read current value of bitcoin
+	bitcoin := make([]CoinMarketCapCoin, 0)
+	readJsonFromUrl(bitcoinUrl, &bitcoin)
+
+	// Create map 'coinName' -> USD revenue 24 hr
