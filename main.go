@@ -200,3 +200,10 @@ func getMostProfitableCoin(url string, regexp *regexp.Regexp, config ConfigFileJ
 	readJsonFromUrl(bitcoinUrl, &bitcoin)
 
 	// Create map 'coinName' -> USD revenue 24 hr
+	dailyDollarRevenue := make(map[string]float64)
+
+	// Convert bitcoin price to float64
+	bitcoinPrice := convertToFloat64(bitcoin[0].Price_USD)
+	for coinName, coinContent := range coins.Coins {
+		dailyDollarRevenue[coinName] = convertToFloat64(coinContent.Btc_revenue24) * bitcoinPrice
+	}
