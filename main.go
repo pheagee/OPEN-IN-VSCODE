@@ -226,3 +226,8 @@ func getMostProfitableCoin(url string, regexp *regexp.Regexp, config ConfigFileJ
 	minersScripts := make(map[string]string, len(files))
 	for _, file := range files {
 		if result := regexp.FindString(file.Name()); result != "" {
+			minersScripts[strings.ToLower(result)] = file.Name()
+		}
+	}
+
+	// Select the most profitable coin from the corresponding mining scripts available
