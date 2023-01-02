@@ -207,3 +207,12 @@ func getMostProfitableCoin(url string, regexp *regexp.Regexp, config ConfigFileJ
 	for coinName, coinContent := range coins.Coins {
 		dailyDollarRevenue[coinName] = convertToFloat64(coinContent.Btc_revenue24) * bitcoinPrice
 	}
+
+	// sort the map into a sorted pairlist
+	sortedDailyDollarRevenue := SortMapByValue(dailyDollarRevenue)
+
+	// Print the coins and their revenue
+	log.Println("Daily $ revenue (BTC price: " + bitcoin[0].Price_USD + ")")
+	for i := 0; i < len(sortedDailyDollarRevenue); i++ {
+		log.Println(sortedDailyDollarRevenue[i].key + " = " + strconv.FormatFloat(sortedDailyDollarRevenue[i].value, 'f', -1, 64))
+	}
