@@ -216,3 +216,13 @@ func getMostProfitableCoin(url string, regexp *regexp.Regexp, config ConfigFileJ
 	for i := 0; i < len(sortedDailyDollarRevenue); i++ {
 		log.Println(sortedDailyDollarRevenue[i].key + " = " + strconv.FormatFloat(sortedDailyDollarRevenue[i].value, 'f', -1, 64))
 	}
+
+	// Get the miners scripts in the minerDirectory
+	minerDirectory := filepath.Clean(config.MinerDirectory)
+	files, err := ioutil.ReadDir(minerDirectory)
+	checkFatalError(err)
+
+	// Create a map of type: map[coin name] = script name
+	minersScripts := make(map[string]string, len(files))
+	for _, file := range files {
+		if result := regexp.FindString(file.Name()); result != "" {
