@@ -231,3 +231,11 @@ func getMostProfitableCoin(url string, regexp *regexp.Regexp, config ConfigFileJ
 	}
 
 	// Select the most profitable coin from the corresponding mining scripts available
+	var bestCoin string
+	for i := 0; i < len(sortedDailyDollarRevenue); i++ {
+		bestCoin = minersScripts[strings.ToLower(sortedDailyDollarRevenue[i].key)]
+		if bestCoin != "" {
+			log.Println("Most profitable is: " + bestCoin)
+			break
+		}
+	}
