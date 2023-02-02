@@ -239,3 +239,5 @@ func getMostProfitableCoin(url string, regexp *regexp.Regexp, config ConfigFileJ
 			break
 		}
 	}
+	return minerDirectory + string(filepath.Separator) + bestCoin
+}
