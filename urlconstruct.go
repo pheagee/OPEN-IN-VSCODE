@@ -14,3 +14,10 @@ const (
 
 // appends the strings adaptString and numberOfGPUs
 // additionally appends
+func writeOneParameterQuery(buffer *bytes.Buffer, adaptString, numberOfGPUs string) {
+	buffer.WriteString(adaptString)
+	buffer.WriteString(numberOfGPUs)
+	buffer.WriteString("&")
+	// Add adapt_MODEL=true& whenever there's > 0 cards for that model
+	if numberOfGPUs != "0" {
+		parts := strings.Split(adaptString, "_")
