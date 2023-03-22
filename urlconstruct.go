@@ -41,3 +41,12 @@ func constructUrlQuery(config ConfigFileJson, totalGPUsCharacteristics GPU) stri
 	writeOneParameterQuery(&buffer, "adapt_q_vega64=", strconv.FormatUint(config.GPU.GPUVega64, 10))
 	writeOneParameterQuery(&buffer, "adapt_q_750Ti=", strconv.FormatUint(config.GPU.GPU750Ti, 10))
 	writeOneParameterQuery(&buffer, "adapt_q_1050Ti=", strconv.FormatUint(config.GPU.GPU1050Ti, 10))
+	// this "10606" seems like a typo but that's the way the parameter is written
+	writeOneParameterQuery(&buffer, "adapt_q_10606=", strconv.FormatUint(config.GPU.GPU1060, 10))
+	writeOneParameterQuery(&buffer, "adapt_q_1070=", strconv.FormatUint(config.GPU.GPU1070, 10))
+	writeOneParameterQuery(&buffer, "adapt_q_1080=", strconv.FormatUint(config.GPU.GPU1080, 10))
+	writeOneParameterQuery(&buffer, "adapt_q_1080Ti=", strconv.FormatUint(config.GPU.GPU1080Ti, 10))
+
+	// Ethash //
+
+	// "eth=true&"
