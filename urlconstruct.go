@@ -62,3 +62,10 @@ func constructUrlQuery(config ConfigFileJson, totalGPUsCharacteristics GPU) stri
 	buffer.WriteString("grof=true&")
 	// factor%5Bgro_hr%5D=142.0&
 	buffer.WriteString("factor%5Bgro_hr%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.Groestl.HashRate, 'f', -1, 64) + "&")
+	// factor%5Bgro_p%5D=590.0&
+	buffer.WriteString("factor%5Bgro_p%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.Groestl.Power, 'f', -1, 64) + "&")
+
+	// X11Gost //
+
+	// x11gf=true&
+	buffer.WriteString("x11gf=true&")
