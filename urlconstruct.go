@@ -100,3 +100,12 @@ func constructUrlQuery(config ConfigFileJson, totalGPUsCharacteristics GPU) stri
 	buffer.WriteString("factor%5Blrev2_hr%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.Lyra2REv2.HashRate, 'f', -1, 64) + "&")
 	// factor%5Blrev2_p%5D=590.0&
 	buffer.WriteString("factor%5Blrev2_p%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.Lyra2REv2.Power, 'f', -1, 64) + "&")
+
+	// NeoScrypt //
+
+	// ns=true&
+	buffer.WriteString("ns=true&")
+	// factor%5Bns_hr%5D=4000.0&
+	buffer.WriteString("factor%5Bns_hr%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.NeoScrypt.HashRate, 'f', -1, 64) + "&")
+	// factor%5Bns_p%5D=590.0&
+	buffer.WriteString("factor%5Bns_p%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.NeoScrypt.Power, 'f', -1, 64) + "&")
