@@ -90,3 +90,13 @@ func constructUrlQuery(config ConfigFileJson, totalGPUsCharacteristics GPU) stri
 	// factor%5Beq_hr%5D=1720.0&
 	buffer.WriteString("factor%5Bcn_hr%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.CryptoNight.HashRate, 'f', -1, 64) + "&")
 	// factor%5Beq_p%5D=590.0&
+	buffer.WriteString("factor%5Bcn_p%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.CryptoNight.Power, 'f', -1, 64) + "&")
+
+	// Lyra2REv2 //
+
+	// lre=true&
+	buffer.WriteString("lre=true&")
+	// factor%5Blrev2_hr%5D=142000.0&
+	buffer.WriteString("factor%5Blrev2_hr%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.Lyra2REv2.HashRate, 'f', -1, 64) + "&")
+	// factor%5Blrev2_p%5D=590.0&
+	buffer.WriteString("factor%5Blrev2_p%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.Lyra2REv2.Power, 'f', -1, 64) + "&")
