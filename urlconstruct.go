@@ -109,3 +109,9 @@ func constructUrlQuery(config ConfigFileJson, totalGPUsCharacteristics GPU) stri
 	buffer.WriteString("factor%5Bns_hr%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.NeoScrypt.HashRate, 'f', -1, 64) + "&")
 	// factor%5Bns_p%5D=590.0&
 	buffer.WriteString("factor%5Bns_p%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.NeoScrypt.Power, 'f', -1, 64) + "&")
+
+	// LBRY //
+
+	// lbry=true&
+	buffer.WriteString("lbry=true&")
+	// factor%5Blbry_hr%5D=1080.0&
