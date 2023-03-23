@@ -82,3 +82,11 @@ func constructUrlQuery(config ConfigFileJson, totalGPUsCharacteristics GPU) stri
 	buffer.WriteString("factor%5Bcn_hr%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.CryptoNight.HashRate, 'f', -1, 64) + "&")
 	// factor%5Bcn_p%5D=590.0&
 	buffer.WriteString("factor%5Bcn_p%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.CryptoNight.Power, 'f', -1, 64) + "&")
+
+	// Equihash //
+
+	// eq=true&
+	buffer.WriteString("eq=true&")
+	// factor%5Beq_hr%5D=1720.0&
+	buffer.WriteString("factor%5Bcn_hr%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.CryptoNight.HashRate, 'f', -1, 64) + "&")
+	// factor%5Beq_p%5D=590.0&
