@@ -161,3 +161,9 @@ func constructUrlQuery(config ConfigFileJson, totalGPUsCharacteristics GPU) stri
 
 	// Cost and rest of url//
 	buffer.WriteString("factor%5Bcost%5D=" + strconv.FormatFloat(config.CostPerKw, 'f', 1, 64) + "&")
+	buffer.WriteString("sort=Profitability24&volume=0&revenue=24h&factor%5Bexchanges%5D%5B%5D=&factor%5Bexchanges%5D%5B%5D=abucoins&")
+	buffer.WriteString("factor%5Bexchanges%5D%5B%5D=bitfinex&factor%5Bexchanges%5D%5B%5D=bittrex&factor%5Bexchanges%5D%5B%5D=bleutrade&")
+	buffer.WriteString("factor%5Bexchanges%5D%5B%5D=cryptopia&factor%5Bexchanges%5D%5B%5D=hitbtc&factor%5Bexchanges%5D%5B%5D=poloniex&")
+	buffer.WriteString("factor%5Bexchanges%5D%5B%5D=yobit&dataset=Main&commit=Calculate")
+	return buffer.String()
+}
