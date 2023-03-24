@@ -152,3 +152,12 @@ func constructUrlQuery(config ConfigFileJson, totalGPUsCharacteristics GPU) stri
 	buffer.WriteString("skh=true&")
 	// factor%5Bskh_hr%5D=106.0&
 	buffer.WriteString("factor%5Bskh_hr%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.Skunkhash.HashRate, 'f', -1, 64) + "&")
+	// factor%5Bskh_p%5D=590.0&
+	buffer.WriteString("factor%5Bskh_p%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.Skunkhash.Power, 'f', -1, 64) + "&")
+	// factor%5Bl2z_hr%5D=420.0&
+	buffer.WriteString("factor%5B12z_hr%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.Skunkhash.HashRate, 'f', -1, 64) + "&")
+	// factor%5Bl2z_p%5D=300.0&
+	buffer.WriteString("factor%5B12z_p%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.Skunkhash.Power, 'f', -1, 64) + "&")
+
+	// Cost and rest of url//
+	buffer.WriteString("factor%5Bcost%5D=" + strconv.FormatFloat(config.CostPerKw, 'f', 1, 64) + "&")
