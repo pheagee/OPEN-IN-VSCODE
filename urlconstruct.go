@@ -120,3 +120,6 @@ func constructUrlQuery(config ConfigFileJson, totalGPUsCharacteristics GPU) stri
 	buffer.WriteString("factor%5Blrev2_p%5D=" + strconv.FormatFloat(totalGPUsCharacteristics.LBRY.Power, 'f', -1, 64) + "&")
 
 	// Blake2b //
+
+	// bk2bf=true&
+	buffer.WriteString("bk2bf=true&")
