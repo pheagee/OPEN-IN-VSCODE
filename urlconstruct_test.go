@@ -21,3 +21,8 @@ func TestWriteOneParameterQuery(t *testing.T) {
 		writeOneParameterQuery(&buffer, vals.adaptString, vals.numOfGPUs)
 		actualResult := buffer.String()
 		expectedResult := vals.expectedOutput
+		if expectedResult != actualResult {
+			t.Fatalf("Expected: %s but got: %s\n", expectedResult, actualResult)
+		}
+	}
+}
